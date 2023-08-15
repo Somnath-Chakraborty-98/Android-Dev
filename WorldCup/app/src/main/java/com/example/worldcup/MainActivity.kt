@@ -11,24 +11,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // 1 - Adapter View: ListView
-        var listView : ListView = findViewById(R.id.list_view)
+        //var listView : ListView = findViewById(R.id.list_view)
 
         // 2 - Data Source: Array of Strings
-        val world_cup_array = arrayOf(
-            "India", "Bangladesh", "Sri-lanka", "South Africa", "England", "Australia", "New-Zealand", "Pakistan", "Zimbabwe"
-        )
+        //val world_cup_array = arrayOf(
+        //    "India", "Bangladesh", "Sri-lanka", "South Africa", "England", "Australia", "New-Zealand", "Pakistan", "Zimbabwe"
+        //)
 
         // 3 - Adapter
-        val arrayAdapter : ArrayAdapter<*>
+        //val arrayAdapter : ArrayAdapter<*>
 
-        arrayAdapter = ArrayAdapter(
-            this,
-            R.layout.list_item,
-            R.id.textView,
-            world_cup_array
-        )
+       // arrayAdapter = ArrayAdapter(
+       //     this,
+       //     R.layout.list_item,
+       //     R.id.textView,
+        //    world_cup_array
+       // )
 
         // 4 - connect list view to adapter
-        listView.adapter = arrayAdapter
+        //listView.adapter = arrayAdapter
     }
 }
