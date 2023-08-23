@@ -31,8 +31,10 @@
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:padding="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/countryName"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

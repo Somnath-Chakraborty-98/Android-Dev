@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
@@ -37,6 +38,17 @@ class MyAdapter(private var activity: MainActivity, private var items: ArrayList
             view = convertView
             viewHolder = view.tag as ViewHolder
         }
+
+        var countries = items[position]
+        viewHolder.txtName?.text = countries.name
+        viewHolder.txtCupWin?.text = countries.cuspWins
+        viewHolder.imgFlag?.setImageResource(countries.flag_img)
+
+        view?.setOnClickListener(){
+            var toast = Toast.makeText(activity, " You Choose: ${countries.name}", Toast.LENGTH_SHORT ).show()
+        }
+
+        return view as View
     }
 
     private class ViewHolder(row : View?){
