@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragments Demo</string>
+    <string name="frag_1">Fragment 1</string>
+    <string name="frag_2">Fragment 2</string>
+    <string name="fragments_demo">Fragments Demo</string>
+    <string name="display_frag_1">Display Frag 1</string>
+    <string name="display_frag_2">Display Frag 2</string>
+</resources>
