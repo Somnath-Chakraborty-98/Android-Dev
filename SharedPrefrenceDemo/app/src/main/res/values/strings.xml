@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SharedPrefrence Demo</string>
+    <string name="shared_prefrences_app">Shared Prefrences app</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="last_username">Last Username</string>
+    <string name="change_name">Change name</string>
+</resources>
