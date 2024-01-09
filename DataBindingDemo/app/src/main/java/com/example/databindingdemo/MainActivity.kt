@@ -5,21 +5,29 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import com.example.databindingdemo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private  lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val editText : EditText = findViewById(R.id.editText)
-        val button : Button = findViewById(R.id.btn)
-        val text : TextView = findViewById(R.id.textView)
+
         var enteredText : String
 
-        button.setOnClickListener() {
-            enteredText = editText.text.toString()
+        /*binding.btn.setOnClickListener() {
+            enteredText = binding.editText.text.toString()
+            binding.textView.setText(enteredText)
+        }*/
 
-            text.text = enteredText
+        binding.apply {
+            btn.setOnClickListener() {
+                enteredText = editText.text.toString()
+                textView.setText(enteredText)
+            }
         }
     }
 }
